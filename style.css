@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parentContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chessContainer{
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+.chessBox{
+    background-color: #23a86a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chessBox>img{
+    width: 80px;
+    height: 80px;
+}
