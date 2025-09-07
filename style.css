@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parentContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chessContainer{
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+}
+.chessBox{
+    background-color: #23a86a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chessBox>img{
+    width: 80px;
+    height: 80px;
+}
+.nextSelected{
+border: 2px solid rgb(26,40,243);
+}
+.pawnPromotionContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+    padding: 7px;
+    gap: 10px;
+    display: none;
+}
+.imgContainer{
+    border: 1px solid black;
+    border-radius: 10px;
+    transform: 0.3s;
+    padding: 2px;
+}
+.imgContainer:hover{
+    transform: scale(1.1);
+    background-color: #23a86a;
+}
+.imgContainer>img{
+    width: 80px;
+    height: 80px;
+}
